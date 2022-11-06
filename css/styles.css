@@ -1,0 +1,139 @@
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --BrightYellow: hsl(71, 73%, 54%);
+
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla';
+    font-size: 16px;
+    background: var(--LightGray);
+}
+
+.community {
+    background: #FFFFFF;
+}
+
+.price {
+    background: var(--Cyan);
+}
+
+.why-us {
+    background: hsl(179, 47%, 52%);
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+.community h2 {
+    color: var(--Cyan);
+}
+
+.community p:first-of-type {
+    color: var(--BrightYellow);
+    margin: 20px 0;
+}
+
+.community p {
+    color: var(--GrayishBlue);
+    line-height: 1.5em;
+}
+
+.content {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.price h2 {
+    color: #FFFFFF;
+}
+
+.price span {
+    font-size: 2em;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.price p {
+    color: var(--LightGray);
+    margin: 10px 0;
+}
+
+.price p:last-of-type {
+    color: #FFFFFF;
+}
+
+.price button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    background: var(--BrightYellow);
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.why-us h2 {
+    color: #FFFFFF;
+}
+
+.why-us p {
+    color: var(--LightGray);
+    margin: 10px 0;
+    line-height: 1.4em;
+}
+
+@media (max-width: 768px) {
+    main {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .community,
+    .price,
+    .why-us {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content {
+        max-width: 700px;
+        max-height: 400px;
+    }
+
+    .content2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .community,
+    .price,
+    .why-us {
+        padding: 20px;
+    }
+}
